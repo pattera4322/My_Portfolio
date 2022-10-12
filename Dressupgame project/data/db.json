@@ -1,0 +1,166 @@
+{
+  "gender": [
+    {
+      "man": "men/man.png",
+      "manSign": "men/man-sign.png"
+    },
+    {
+      "women": "women/women.png",
+      "womenSign": "women/women-sign.png"
+    }
+  ],
+  "human": [
+    {
+      "man": "men/man.png"
+    },
+    {
+      "women": "women/woman.png"
+    }
+  ],
+  "clothes": {
+    "topMen": [
+      {
+        "id": 1,
+        "part": "men/topM1.png"
+      },
+      {
+        "id": 2,
+        "part": "men/topM2.png"
+      },
+      {
+        "id": 3,
+        "part": "men/topM3.png"
+      },
+      {
+        "id": 4,
+        "part": "men/topM4.png"
+      },
+      {
+        "id": 5,
+        "part": "men/topM5.png"
+      }
+    ],
+    "bottomMen": [
+      {
+        "id": 1,
+        "part": "men/bottomM1.png"
+      },
+      {
+        "id": 2,
+        "part": "men/bottomM2.png"
+      },
+      {
+        "id": 3,
+        "part": "men/bottomM3.png"
+      },
+      {
+        "id": 4,
+        "part": "men/bottomM4.png"
+      },
+      {
+        "id": 5,
+        "part": "men/bottomM5.png"
+      }
+    ],
+    "shoesMen": [
+      {
+        "id": 1,
+        "part": "men/shoeM1.png"
+      },
+      {
+        "id": 2,
+        "part": "men/shoeM2.png"
+      },
+      {
+        "id": 3,
+        "part": "men/shoeM3.png"
+      },
+      {
+        "id": 4,
+        "part": "men/shoeM4.png"
+      },
+      {
+        "id": 5,
+        "part": "men/shoeM5.png"
+      }
+    ],
+    "topWomen": [
+      {
+        "id": 1,
+        "part": "women/topW1.png"
+      },
+      {
+        "id": 2,
+        "part": "women/topW2.png"
+      },
+      {
+        "id": 3,
+        "part": "women/topW3.png"
+      },
+      {
+        "id": 4,
+        "part": "women/topW4.png"
+      },
+      {
+        "id": 5,
+        "part": "women/topW5.png"
+      }
+    ],
+    "bottomWomen": [
+      {
+        "id": 1,
+        "part": "women/bottomW1.png"
+      },
+      {
+        "id": 2,
+        "part": "women/bottomW2.png"
+      },
+      {
+        "id": 3,
+        "part": "women/bottomW3.png"
+      },
+      {
+        "id": 4,
+        "part": "women/bottomW4.png"
+      },
+      {
+        "id": 5,
+        "part": "women/bottomW5.png"
+      }
+    ],
+    "shoesWomen": [
+      {
+        "id": 1,
+        "part": "women/shoeW1.png"
+      },
+      {
+        "id": 2,
+        "part": "women/shoeW2.png"
+      },
+      {
+        "id": 3,
+        "part": "women/shoeW3.png"
+      },
+      {
+        "id": 4,
+        "part": "women/shoeW4.png"
+      },
+      {
+        "id": 5,
+        "part": "women/shoeW5.png"
+      }
+    ]
+  },
+  "music": [
+    {
+      "play": "play.png"
+    },
+    {
+      "pause": "pause.png"
+    },
+    {
+      "playList": "song.mp3"
+    }
+  ],
+  "Add": []
+}
