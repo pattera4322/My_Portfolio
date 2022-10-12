@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- https://tailwindcss.com/docs/installation -->
+    <!-- Using Tailwind via CDN -->
+    <link
+      href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <title>Product List</title>
+  </head>
+  <body>
+    <div>
+      <div
+        class="
+          max-w-2xl
+          mx-auto
+          py-8
+          px-4
+          sm:py-12 sm:px-6
+          lg:max-w-7xl lg:px-8
+        "
+      >
+        <div class="flex justify-end" id="userBgColor">
+          <p class="text-sm font-semibold text-gray-700">Welcome,</p>
+          <p id="username" class="text-sm font-semibold text-purple-700"></p>
+          <svg
+            id="pinkBg"
+            class="fill-current text-pink-500"
+            xmlns="http://www.w3.org/2000/svg"
+            height="24px"
+            viewBox="0 0 24 24"
+            width="24px"
+            fill="#FFFFFF"
+          >
+            <path
+              d="M24 0H0v24h24V0zm0 0H0v24h24V0zM0 24h24V0H0v24z"
+              fill="none"
+            />
+            <path
+              d="M17.66 8L12 2.35 6.34 8C4.78 9.56 4 11.64 4 13.64s.78 4.11 2.34 5.67 3.61 2.35 5.66 2.35 4.1-.79 5.66-2.35S20 15.64 20 13.64 19.22 9.56 17.66 8zM6 14c.01-2 .62-3.27 1.76-4.4L12 5.27l4.24 4.38C17.38 10.77 17.99 12 18 14H6z"
+            />
+          </svg>
+          <svg
+            id="blueBg"
+            class="fill-current text-blue-500"
+            xmlns="http://www.w3.org/2000/svg"
+            height="24px"
+            viewBox="0 0 24 24"
+            width="24px"
+            fill="#FFFFFF"
+          >
+            <path
+              d="M24 0H0v24h24V0zm0 0H0v24h24V0zM0 24h24V0H0v24z"
+              fill="none"
+            />
+            <path
+              d="M17.66 8L12 2.35 6.34 8C4.78 9.56 4 11.64 4 13.64s.78 4.11 2.34 5.67 3.61 2.35 5.66 2.35 4.1-.79 5.66-2.35S20 15.64 20 13.64 19.22 9.56 17.66 8zM6 14c.01-2 .62-3.27 1.76-4.4L12 5.27l4.24 4.38C17.38 10.77 17.99 12 18 14H6z"
+            />
+          </svg>
+        </div>
+        <div class="mt-1 py-4 rounded-md shadow-sm">
+          <div class="pl-3 flex flex-row items-center">
+            <span>
+              <img src="./images/search.svg" id="search" />
+            </span>
+
+            <input
+              type="text"
+              id="searchText"
+              class="
+                block
+                w-full
+                p-1
+                border-2 border-indigo-500
+                rounded-md
+                md:w-2/6
+              "
+            />
+            <div class="px-4 py-3 sm:px-6">
+              <button
+                id="searchButton"
+                type="submit"
+                class="
+                  justify-center
+                  py-2
+                  px-4
+                  shadow-sm
+                  text-sm
+                  font-medium
+                  rounded-md
+                  text-white
+                  bg-indigo-600
+                  hover:bg-indigo-700
+                  focus:outline-none
+                  focus:ring-2
+                  focus:ring-offset-2
+                  focus:ring-indigo-500
+                "
+              >
+                Search
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="flex justify-between items-center mb-4">
+          <h2 class="flex text-lg font-bold">Products::</h2>
+
+          <h2 class="flex items-center text-sm font-semibold text-indigo-800">
+            <!-- <img src="./images/cart.svg" alt="" />Your Cart::
+            <span class="pr-4 text-pink-500" id="cartQtys">0</span> -->
+            <a href="./cart.html" role="button" class="relative flex">
+              <svg class="flex-1 w-8 h-8 fill-current" viewbox="0 0 24 24">
+                <path
+                  d="M17,18C15.89,18 15,18.89 15,20A2,2 0 0,0 17,22A2,2 0 0,0 19,20C19,18.89 18.1,18 17,18M1,2V4H3L6.6,11.59L5.24,14.04C5.09,14.32 5,14.65 5,15A2,2 0 0,0 7,17H19V15H7.42A0.25,0.25 0 0,1 7.17,14.75C7.17,14.7 7.18,14.66 7.2,14.63L8.1,13H15.55C16.3,13 16.96,12.58 17.3,11.97L20.88,5.5C20.95,5.34 21,5.17 21,5A1,1 0 0,0 20,4H5.21L4.27,2M7,18C5.89,18 5,18.89 5,20A2,2 0 0,0 7,22A2,2 0 0,0 9,20C9,18.89 8.1,18 7,18Z"
+                />
+              </svg>
+              <span
+                id="cartQtys"
+                class="
+                  absolute
+                  right-0
+                  top-0
+                  rounded-full
+                  bg-red-600
+                  w-4
+                  h-4
+                  top
+                  right
+                  p-0
+                  m-0
+                  text-white
+                  font-mono
+                  text-sm
+                  leading-tight
+                  text-center
+                "
+                >0
+              </span>
+            </a>
+            <a href="#">
+            <span>
+              <svg
+                id="remove-cart"
+                class="fill-current text-red-700"
+                xmlns="http://www.w3.org/2000/svg"
+                height="24px"
+                viewBox="0 0 24 24"
+                width="24px"
+                fill="#000000"
+              >
+                <path d="M0 0h24v24H0V0z" fill="none" />
+                <path
+                  d="M16 9v10H8V9h8m-1.5-6h-5l-1 1H5v2h14V4h-3.5l-1-1zM18 7H6v12c0 1.1.9 2 2 2h8c1.1 0 2-.9 2-2V7z"
+                />
+              </svg>
+              </a>
+            </span>
+          </h2>
+        </div>
+
+        <div
+          id="products"
+          class="
+            grid grid-cols-1
+            gap-y-10
+            sm:grid-cols-2
+            gap-x-6
+            lg:grid-cols-3
+            xl:grid-cols-4 xl:gap-x-8
+          "
+        >
+          <!-- <div class="product">
+            <div class="w-full bg-gray-200 rounded-lg overflow-hidden">
+              <img
+                src="./images/P001.png"
+                class="w-full h-full object-center object-cover"
+              />
+            </div>
+            <div class="flex justify-between">
+              <p class="mt-4 text-sm font-semibold text-gray-700">
+                Braided Solo Loop,
+              </p>
+              <p class="mt-4 text-md font-semibold text-gray-700">3100 Baht</p>
+            </div>
+            <p class="mt-1 text-sm text-gray-700">สายแบบ 45 มม. ขนาด 7</p>
+            <p class="mt-1 text-sm text-gray-700"><span>Stocks: </span>10</p>
+            <div class="mt-6">
+              <a
+                id="P001"
+                href="#"
+                class="
+                  flex
+                  justify-center
+                  items-center
+                  px-6
+                  py-3
+                  border border-transparent
+                  rounded-md
+                  shadow-sm
+                  text-base
+                  font-medium
+                  text-white
+                  bg-indigo-600
+                  hover:bg-indigo-700
+                "
+                >Add</a
+              >
+            </div>
+          </div> -->
+
+          <!-- More products... -->
+        </div>
+      </div>
+    </div>
+
+    <script src="./scripts/productList.js" type="module"></script>
+  </body>
+</html>
