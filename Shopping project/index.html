@@ -1,0 +1,86 @@
+<html lang="en">
+  <head>
+    <title>Document</title>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="src/style.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <!-- <link rel="stylesheet" href="alert/dist/sweetalert.css"> -->
+  </head>
+  
+  <body class="theme-light">
+    <div>
+    <label>
+      <input type="checkbox" />
+      <span class="check"></span>
+    </label>
+  </div>
+  
+  <div class="music">
+    <div class="imgMusic">
+        <img src="./src/assets/images/wallpaper/santa.png" alt="santa">
+    </div>
+    <audio class="jingle" controls loop>
+      <source src="./src/assets/audio/jingle.mp3" type="audio/mpeg">
+    </audio>
+  </div>
+
+    <div id="heading">
+      <div id="submitUser">
+        <label for="User" id="textUser">User :</label>
+        <input id="User" type="text" name="User" required />
+        <button id="submit" type="submit" value="Submit New User">
+          Submit
+        </button>
+      </div>
+
+      <div class="top-text">
+        <h1 class="headerShop">Watch shop</h1>
+        <p class="headertext">ร้านนาฬิกาเรือนเก่า</p>
+        <img
+          class="img-topic"
+          src="./src/assets/images/wallpaper/wallpaper.png"
+          alt="wallpaper"
+        />
+        <img
+          class="img-train"
+          src="./src/assets/images/wallpaper/train.png"
+          alt="train"
+        />
+      </div>
+      <div class="changeColorButton">
+        <button class="colorBT" id="colorBT"></button>
+        <!-- <input type="color" id="colorID" > -->
+      </div>
+      <p id="Userid"></p>
+
+      <div id="divCart">
+        <img src="src/assets/images/icon/cart.png" id="iconCart" />
+        <p id="cart"></p>
+        <img src="src/assets/images/icon/bin.png" id="iconRemove" />
+      </div>
+
+      <div id="divSearch">
+        <img src="src/assets/images/icon/search.png" id="iconSearch" />
+        <input type="text" id="searchText" />
+        <button id="searchButton">SEARCH</button>
+      </div>
+    </div>
+    
+   
+
+    <div id="myModal" class="modal">
+      <!-- Modal content -->
+      <div class="modal-content">
+        <span class="close">&times;</span>
+        <p id="shopping">Shopping List</p>
+        <p id="totalPrice"></p>
+        <div class="cart-list"></div>
+      </div>
+    </div>
+
+    <div id="products">
+      <script src="src/script.js" type="module"></script>
+    </div>
+  </body>
+</html>
