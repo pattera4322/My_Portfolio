@@ -1,0 +1,113 @@
+
+*{
+    box-sizing: border-box;
+}
+body{
+    
+    background-color: #000000;
+    background-image: url(../PORTFOLIO/img/arrow.png);
+    
+    background-repeat: repeat-y;
+    background-position: top center;
+    background-attachment: fixed;
+    font-family: 'Press Start 2P', cursive;
+    font-size: 40px;
+    margin:0;
+   
+}
+
+
+a:hover{
+    color: #6ea59c;
+    
+}
+a{
+
+    color: #dda949;
+    text-decoration:none ;
+}
+
+/*head*/
+h1{
+    color: coral;
+    font-family: 'Press Start 2P', cursive;
+    font-weight: bold;
+    font-size: 110px;
+    text-align: center;
+    text-shadow: 10px 5px rgb(94, 16, 16);
+    
+}
+h2{
+    color: aliceblue;
+    text-shadow: 10px 5px rgb(0, 0, 0);
+    padding-left: 50px;
+}
+
+
+.floatright{
+    float: right;
+}
+.floatleft{
+    float: left;
+}
+.move {
+    position :relative;
+    animation: mymove 20s infinite; 
+    
+}
+.loy{
+    position: relative;
+    animation: loy 2.5s infinite;
+
+}
+@keyframes mymove{
+    0%   {left: 0px;}
+    50%  {left: 1100px;}
+    100% {left: 0px;}
+}
+@keyframes loy{
+    0%   {top: 0px;}
+    50%  {top: 50px;}
+    100% {top: 0px;}
+}
+
+.home a{
+    font-family: 'Press Start 2P', cursive;
+    font-size: 30px;
+    text-shadow:3px 2px beige;
+    color:black;
+    background-color:white;
+    border-radius: 50px;
+    border: black solid 4px;
+    padding: 10px 10px 10px 15px;
+}
+.home a:hover{
+    font-family: 'Press Start 2P', cursive;
+    font-size: 30px;
+    text-shadow:3px 2px beige;
+    color: rgb(33, 156, 156);
+    background-color:coral;
+    border-radius: 50px;
+    border: rgb(252, 228, 162) solid 4px;
+    padding: 10px 10px 10px 15px;
+}
+
+table{
+    margin-bottom: 50px;
+    margin-top: 60px;
+    margin-left: 50px;
+    font-size: 50px;
+    font-family: 'VT323', monospace;
+    border: black solid 5px;
+    background-color: rgba(255, 255, 255, 0.8);
+}
+th{
+    border: black solid 2px;
+}
+td{
+    border: black solid 2px;
+}
+caption{
+    background-color: black;
+    color: white;
+}
